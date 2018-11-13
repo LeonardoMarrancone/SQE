@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_opivYOaOEeiWNIKjNyd2ug" name="Component Diagram">
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_owNYEOaOEeiWNIKjNyd2ug">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Component" xmi:id="_2xATQOeUEei9RqMAjzbJuw" name="Smart Floor">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_dIPT4OeVEei9RqMAjzbJuw" client="_2xATQOeUEei9RqMAjzbJuw" supplier="_bPBIcOeVEei9RqMAjzbJuw" contract="_bPBIcOeVEei9RqMAjzbJuw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_5EvQcOeUEei9RqMAjzbJuw" name="Alarm">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xXMEAOeWEei9RqMAjzbJuw" client="_5EvQcOeUEei9RqMAjzbJuw" supplier="_xWwmMOeWEei9RqMAjzbJuw" contract="_xWwmMOeWEei9RqMAjzbJuw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_6wnjcOeUEei9RqMAjzbJuw" name="Building Manager Unit">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_utC8gOeXEei9RqMAjzbJuw" client="_6wnjcOeUEei9RqMAjzbJuw" supplier="_YxAjAOeXEei9RqMAjzbJuw" contract="_YxAjAOeXEei9RqMAjzbJuw"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_xRZvoOeXEei9RqMAjzbJuw" client="_6wnjcOeUEei9RqMAjzbJuw" supplier="_xRAuEOeXEei9RqMAjzbJuw" contract="_xRAuEOeXEei9RqMAjzbJuw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_pjc3YOeVEei9RqMAjzbJuw" client="_6wnjcOeUEei9RqMAjzbJuw" supplier="_bPBIcOeVEei9RqMAjzbJuw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_PB5ZYOeXEei9RqMAjzbJuw" client="_6wnjcOeUEei9RqMAjzbJuw" supplier="_xWwmMOeWEei9RqMAjzbJuw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_9dgngOeUEei9RqMAjzbJuw" name="Central Management Unit">
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_8Yf_4OeXEei9RqMAjzbJuw" client="_9dgngOeUEei9RqMAjzbJuw" supplier="_8X90YOeXEei9RqMAjzbJuw" contract="_8X90YOeXEei9RqMAjzbJuw"/>
+    <interfaceRealization xmi:type="uml:InterfaceRealization" xmi:id="_Vv4e4OeYEei9RqMAjzbJuw" client="_9dgngOeUEei9RqMAjzbJuw" supplier="_FDKC4OeYEei9RqMAjzbJuw" contract="_FDKC4OeYEei9RqMAjzbJuw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_5EsFwOeXEei9RqMAjzbJuw" client="_9dgngOeUEei9RqMAjzbJuw" supplier="_xRAuEOeXEei9RqMAjzbJuw"/>
+    <packagedElement xmi:type="uml:Usage" xmi:id="_5437wOeXEei9RqMAjzbJuw" client="_9dgngOeUEei9RqMAjzbJuw" supplier="_YxAjAOeXEei9RqMAjzbJuw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="__4eOEOeUEei9RqMAjzbJuw" name="Statistic Monitor">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_EQM78OeYEei9RqMAjzbJuw" client="__4eOEOeUEei9RqMAjzbJuw" supplier="_8X90YOeXEei9RqMAjzbJuw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Component" xmi:id="_CnuCkOeVEei9RqMAjzbJuw" name="Police Station">
+    <packagedElement xmi:type="uml:Usage" xmi:id="_W56CAOeYEei9RqMAjzbJuw" client="_CnuCkOeVEei9RqMAjzbJuw" supplier="_FDKC4OeYEei9RqMAjzbJuw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_bPBIcOeVEei9RqMAjzbJuw" name="Floor Data">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_-T61oOeVEei9RqMAjzbJuw" name="getFloorData"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_xWwmMOeWEei9RqMAjzbJuw" name="Switch On/Off">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_Ko5_4OeXEei9RqMAjzbJuw" name="SwitchOn"/>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_McYIoOeXEei9RqMAjzbJuw" name="SwitchOff"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_YxAjAOeXEei9RqMAjzbJuw" name="Building Data">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_sEjQQOeXEei9RqMAjzbJuw" name="GetBuildingData"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_xRAuEOeXEei9RqMAjzbJuw" name="Alarm">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_3akGQOeXEei9RqMAjzbJuw" name="SendAlarm"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_8X90YOeXEei9RqMAjzbJuw" name="Statistics">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_B5EFcOeYEei9RqMAjzbJuw" name="GetStatistics"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Interface" xmi:id="_FDKC4OeYEei9RqMAjzbJuw" name="ThiefAlarm" visibility="public">
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_LklIgOeYEei9RqMAjzbJuw" name="CallPolice"/>
+  </packagedElement>
+</uml:Model>
