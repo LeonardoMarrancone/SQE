@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_33OxwOTyEeiwaZOOlPagsA" name="Prova">
+  <ownedComment xmi:type="uml:Comment" xmi:id="_94jZwOgNEeixn5FGtm6XKw">
+    <body>thief position include detects intruder
+connessione con stats calculation
+
+</body>
+  </ownedComment>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_4BbPkOTyEeiwaZOOlPagsA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_FpkgQOTzEeiwaZOOlPagsA" name="System Manager"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_TOZXMOTzEeiwaZOOlPagsA" name="Dangerous Agent"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_gG7v4OTzEeiwaZOOlPagsA" name="Rescuer"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_13HesOTzEeiwaZOOlPagsA" name="Fire">
+    <generalization xmi:type="uml:Generalization" xmi:id="_cXkncOaOEeifF5IU6xyoOg" general="_TOZXMOTzEeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_2F9zAOTzEeiwaZOOlPagsA" name="Thief">
+    <generalization xmi:type="uml:Generalization" xmi:id="_dW8ZwOaOEeifF5IU6xyoOg" general="_TOZXMOTzEeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Wx42oOT0EeiwaZOOlPagsA" name="Policeman">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Qzx-sOaPEeifF5IU6xyoOg" general="_gG7v4OTzEeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_X3wSgOT0EeiwaZOOlPagsA" name="Firefighter">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Sbkb4OaPEeifF5IU6xyoOg" general="_gG7v4OTzEeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_nNuW8OT0EeiwaZOOlPagsA" name="Central"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qObu4OT0EeiwaZOOlPagsA" name="Police Station">
+    <generalization xmi:type="uml:Generalization" xmi:id="_Cy6aEOaREeifF5IU6xyoOg" general="_nNuW8OT0EeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_qmaKAOT0EeiwaZOOlPagsA" name="Fire Station">
+    <generalization xmi:type="uml:Generalization" xmi:id="_B5hT8OaREeifF5IU6xyoOg" general="_nNuW8OT0EeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_N1bnEOT2EeiwaZOOlPagsA" memberEnd="_N1iUwOT2EeiwaZOOlPagsA _N1kJ8OT2EeiwaZOOlPagsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_N1gfkOT2EeiwaZOOlPagsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_N1gfkeT2EeiwaZOOlPagsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_N1iUwOT2EeiwaZOOlPagsA" name="log in" type="_N0BuUOT1EeiwaZOOlPagsA" association="_N1bnEOT2EeiwaZOOlPagsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_N1kJ8OT2EeiwaZOOlPagsA" name="system manager" type="_FpkgQOTzEeiwaZOOlPagsA" association="_N1bnEOT2EeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_GjIosOT3EeiwaZOOlPagsA" memberEnd="_GjJPwuT3EeiwaZOOlPagsA _GjJPw-T3EeiwaZOOlPagsA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_GjJPwOT3EeiwaZOOlPagsA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_GjJPweT3EeiwaZOOlPagsA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GjJPwuT3EeiwaZOOlPagsA" name="location" type="_wTy4sOT2EeiwaZOOlPagsA" association="_GjIosOT3EeiwaZOOlPagsA"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_GjJPw-T3EeiwaZOOlPagsA" name="rescuer" type="_gG7v4OTzEeiwaZOOlPagsA" association="_GjIosOT3EeiwaZOOlPagsA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aHssAOaNEeifF5IU6xyoOg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_a_sD8OaNEeifF5IU6xyoOg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_b1tF8OaNEeifF5IU6xyoOg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_VwwEcOaOEeifF5IU6xyoOg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_XSHwkOaOEeifF5IU6xyoOg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_ZLbbkOaOEeifF5IU6xyoOg"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_MSKNoOaPEeifF5IU6xyoOg" memberEnd="_MSPtMOaPEeifF5IU6xyoOg _MSPtMeaPEeifF5IU6xyoOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_MSK0sOaPEeifF5IU6xyoOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_MSK0seaPEeifF5IU6xyoOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MSPtMOaPEeifF5IU6xyoOg" name="victim location" type="_4yimoOT2EeiwaZOOlPagsA" association="_MSKNoOaPEeifF5IU6xyoOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_MSPtMeaPEeifF5IU6xyoOg" name="firefighter" type="_X3wSgOT0EeiwaZOOlPagsA" association="_MSKNoOaPEeifF5IU6xyoOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_Ps4oEOaPEeifF5IU6xyoOg" memberEnd="_Ps5PIuaPEeifF5IU6xyoOg _Ps5PI-aPEeifF5IU6xyoOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Ps5PIOaPEeifF5IU6xyoOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Ps5PIeaPEeifF5IU6xyoOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ps5PIuaPEeifF5IU6xyoOg" name="thief location" type="_2A17EOT2EeiwaZOOlPagsA" association="_Ps4oEOaPEeifF5IU6xyoOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_Ps5PI-aPEeifF5IU6xyoOg" name="policeman" type="_Wx42oOT0EeiwaZOOlPagsA" association="_Ps4oEOaPEeifF5IU6xyoOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xgkIgOaQEeifF5IU6xyoOg" memberEnd="_xgkvkuaQEeifF5IU6xyoOg _xgkvk-aQEeifF5IU6xyoOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xgkvkOaQEeifF5IU6xyoOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xgkvkeaQEeifF5IU6xyoOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xgkvkuaQEeifF5IU6xyoOg" name="alarm manager" type="_cJLZgOT2EeiwaZOOlPagsA" association="_xgkIgOaQEeifF5IU6xyoOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xgkvk-aQEeifF5IU6xyoOg" name="central" type="_nNuW8OT0EeiwaZOOlPagsA" association="_xgkIgOaQEeifF5IU6xyoOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7H4BAOaQEeifF5IU6xyoOg" memberEnd="_7H4oEuaQEeifF5IU6xyoOg _7H4oE-aQEeifF5IU6xyoOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7H4oEOaQEeifF5IU6xyoOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7H4oEeaQEeifF5IU6xyoOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7H4oEuaQEeifF5IU6xyoOg" name="thief alarm" type="_ksmOIOaNEeifF5IU6xyoOg" association="_7H4BAOaQEeifF5IU6xyoOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7H4oE-aQEeifF5IU6xyoOg" name="police station" type="_qObu4OT0EeiwaZOOlPagsA" association="_7H4BAOaQEeifF5IU6xyoOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_R7EE8OaREeifF5IU6xyoOg" name="Stats System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_N0BuUOT1EeiwaZOOlPagsA" name="Log In">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_kRpK4eT1EeiwaZOOlPagsA" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_3piMoOT1EeiwaZOOlPagsA" name="Number of People"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_5W1b8OT1EeiwaZOOlPagsA" name="average Tisit Time"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Cg9CIOT2EeiwaZOOlPagsA" name="People Density "/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Package" xmi:id="_ou4bAOaREeifF5IU6xyoOg" name="Disaster and Intrusion System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_W2n1cOaQEeifF5IU6xyoOg" name="Start Fire Alarm"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_grREoOT2EeiwaZOOlPagsA" name="Fire Alarm">
+      <extend xmi:type="uml:Extend" xmi:id="_LOQWEOaOEeifF5IU6xyoOg" extendedCase="_cJLZgOT2EeiwaZOOlPagsA" extensionLocation="_LOQ9IOaOEeifF5IU6xyoOg"/>
+      <include xmi:type="uml:Include" xmi:id="_eDu8YOaQEeifF5IU6xyoOg" addition="_W2n1cOaQEeifF5IU6xyoOg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_cJLZgOT2EeiwaZOOlPagsA" name="Alarm Manager">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_LOQ9IOaOEeifF5IU6xyoOg" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_Lz7O8eaOEeifF5IU6xyoOg" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_ksmOIOaNEeifF5IU6xyoOg" name="Thief Alarm">
+      <extend xmi:type="uml:Extend" xmi:id="_Lz7O8OaOEeifF5IU6xyoOg" extendedCase="_cJLZgOT2EeiwaZOOlPagsA" extensionLocation="_Lz7O8eaOEeifF5IU6xyoOg"/>
+      <include xmi:type="uml:Include" xmi:id="_fR3jcOaQEeifF5IU6xyoOg" addition="_YECq0OaQEeifF5IU6xyoOg"/>
+      <include xmi:type="uml:Include" xmi:id="_gFh1AOaQEeifF5IU6xyoOg" addition="_Y4LdgOaQEeifF5IU6xyoOg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_YECq0OaQEeifF5IU6xyoOg" name="Start Thief Alarm"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Y4LdgOaQEeifF5IU6xyoOg" name="Door Locking"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_4yimoOT2EeiwaZOOlPagsA" name="Victim Location">
+      <extend xmi:type="uml:Extend" xmi:id="_DzdWYOT3EeiwaZOOlPagsA" extendedCase="_wTy4sOT2EeiwaZOOlPagsA" extensionLocation="_DzdWYeT3EeiwaZOOlPagsA"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_wTy4sOT2EeiwaZOOlPagsA" name="Location">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_DzdWYeT3EeiwaZOOlPagsA" name="ExtensionPoint1"/>
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_E1I10eT3EeiwaZOOlPagsA" name="ExtensionPoint2"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2A17EOT2EeiwaZOOlPagsA" name="Thief Location">
+      <extend xmi:type="uml:Extend" xmi:id="_E1I10OT3EeiwaZOOlPagsA" extendedCase="_wTy4sOT2EeiwaZOOlPagsA" extensionLocation="_E1I10eT3EeiwaZOOlPagsA"/>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_aN4aQOaSEeifF5IU6xyoOg" memberEnd="_aN5BUeaSEeifF5IU6xyoOg _aN5BUuaSEeifF5IU6xyoOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_aN4aQeaSEeifF5IU6xyoOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_aN5BUOaSEeifF5IU6xyoOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aN5BUeaSEeifF5IU6xyoOg" name="location" type="_wTy4sOT2EeiwaZOOlPagsA" association="_aN4aQOaSEeifF5IU6xyoOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_aN5BUuaSEeifF5IU6xyoOg" name="central" type="_nNuW8OT0EeiwaZOOlPagsA" association="_aN4aQOaSEeifF5IU6xyoOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_4amQgOaSEeifF5IU6xyoOg" memberEnd="_4am3kuaSEeifF5IU6xyoOg _4am3k-aSEeifF5IU6xyoOg">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_4am3kOaSEeifF5IU6xyoOg" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_4am3keaSEeifF5IU6xyoOg" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4am3kuaSEeifF5IU6xyoOg" name="fire station" type="_qmaKAOT0EeiwaZOOlPagsA" association="_4amQgOaSEeifF5IU6xyoOg"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_4am3k-aSEeifF5IU6xyoOg" name="fire alarm" type="_grREoOT2EeiwaZOOlPagsA" association="_4amQgOaSEeifF5IU6xyoOg"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_Q0HMMOgLEeixn5FGtm6XKw" name="Person"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_S6GoUOgLEeixn5FGtm6XKw" name="Thief">
+    <generalization xmi:type="uml:Generalization" xmi:id="_9SnQkOgMEeixn5FGtm6XKw" general="_Q0HMMOgLEeixn5FGtm6XKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_VP3l0OgLEeixn5FGtm6XKw" name="Manager"/>
+  <packagedElement xmi:type="uml:Package" xmi:id="_cQESIOgLEeixn5FGtm6XKw" name="System">
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_qJwl0OgLEeixn5FGtm6XKw" name="Monitorn Stats">
+      <extensionPoint xmi:type="uml:ExtensionPoint" xmi:id="_krzS4OgMEeixn5FGtm6XKw" name="ExtensionPoint1"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_sWuzsOgLEeixn5FGtm6XKw" name="Stats Calculation">
+      <include xmi:type="uml:Include" xmi:id="_J0i8kOgMEeixn5FGtm6XKw" addition="_BpTZcOgMEeixn5FGtm6XKw"/>
+      <include xmi:type="uml:Include" xmi:id="_KgHCEOgMEeixn5FGtm6XKw" addition="_CYUbkOgMEeixn5FGtm6XKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_BpTZcOgMEeixn5FGtm6XKw" name="Number of People"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_CYUbkOgMEeixn5FGtm6XKw" name="Avarage Time"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_Qe2RYOgMEeixn5FGtm6XKw" name="Detects intruder">
+      <extend xmi:type="uml:Extend" xmi:id="_kryr0OgMEeixn5FGtm6XKw" extendedCase="_qJwl0OgLEeixn5FGtm6XKw" extensionLocation="_krzS4OgMEeixn5FGtm6XKw"/>
+      <include xmi:type="uml:Include" xmi:id="_tIKbMOgMEeixn5FGtm6XKw" addition="_lhVMsOgMEeixn5FGtm6XKw"/>
+      <include xmi:type="uml:Include" xmi:id="_ujgX0OgMEeixn5FGtm6XKw" addition="_nR81wOgMEeixn5FGtm6XKw"/>
+      <include xmi:type="uml:Include" xmi:id="_oPPH8OgNEeixn5FGtm6XKw" addition="_2VqFgOgMEeixn5FGtm6XKw"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_lhVMsOgMEeixn5FGtm6XKw" name="Call Police"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_nR81wOgMEeixn5FGtm6XKw" name="Start Alarm"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_2VqFgOgMEeixn5FGtm6XKw" name="Thief Position"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_GG-pMOgNEeixn5FGtm6XKw" name="Show Stats"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_fZrucOgLEeixn5FGtm6XKw" name="Police Station"/>
+  <packagedElement xmi:type="uml:Actor" xmi:id="_hnoMsOgLEeixn5FGtm6XKw" name="Policeman"/>
+  <packagedElement xmi:type="uml:Association" xmi:id="_46q_8OgMEeixn5FGtm6XKw" memberEnd="_46yUsOgMEeixn5FGtm6XKw _46yUsegMEeixn5FGtm6XKw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_46wfgOgMEeixn5FGtm6XKw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_46xGkOgMEeixn5FGtm6XKw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_46yUsOgMEeixn5FGtm6XKw" name="thief position" type="_2VqFgOgMEeixn5FGtm6XKw" association="_46q_8OgMEeixn5FGtm6XKw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_46yUsegMEeixn5FGtm6XKw" name="policeman" type="_hnoMsOgLEeixn5FGtm6XKw" association="_46q_8OgMEeixn5FGtm6XKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_7GYCgOgMEeixn5FGtm6XKw" memberEnd="_7GYpkugMEeixn5FGtm6XKw _7GYpk-gMEeixn5FGtm6XKw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_7GYpkOgMEeixn5FGtm6XKw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_7GYpkegMEeixn5FGtm6XKw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7GYpkugMEeixn5FGtm6XKw" name="call police" type="_lhVMsOgMEeixn5FGtm6XKw" association="_7GYCgOgMEeixn5FGtm6XKw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_7GYpk-gMEeixn5FGtm6XKw" name="police station" type="_fZrucOgLEeixn5FGtm6XKw" association="_7GYCgOgMEeixn5FGtm6XKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_-RXX0OgMEeixn5FGtm6XKw" memberEnd="_-RX-4ugMEeixn5FGtm6XKw _-RYl8OgMEeixn5FGtm6XKw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_-RX-4OgMEeixn5FGtm6XKw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_-RX-4egMEeixn5FGtm6XKw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-RX-4ugMEeixn5FGtm6XKw" name="monitorn stats" type="_qJwl0OgLEeixn5FGtm6XKw" association="_-RXX0OgMEeixn5FGtm6XKw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_-RYl8OgMEeixn5FGtm6XKw" name="person" type="_Q0HMMOgLEeixn5FGtm6XKw" association="_-RXX0OgMEeixn5FGtm6XKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_DVlfoOgNEeixn5FGtm6XKw" memberEnd="_DVmGsugNEeixn5FGtm6XKw _DVmGs-gNEeixn5FGtm6XKw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_DVmGsOgNEeixn5FGtm6XKw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_DVmGsegNEeixn5FGtm6XKw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DVmGsugNEeixn5FGtm6XKw" name="detects intruder" type="_Qe2RYOgMEeixn5FGtm6XKw" association="_DVlfoOgNEeixn5FGtm6XKw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_DVmGs-gNEeixn5FGtm6XKw" name="thief" type="_S6GoUOgLEeixn5FGtm6XKw" association="_DVlfoOgNEeixn5FGtm6XKw"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_IgWUUOgNEeixn5FGtm6XKw" memberEnd="_IgW7YugNEeixn5FGtm6XKw _IgW7Y-gNEeixn5FGtm6XKw">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_IgW7YOgNEeixn5FGtm6XKw" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_IgW7YegNEeixn5FGtm6XKw" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IgW7YugNEeixn5FGtm6XKw" name="show stats" type="_GG-pMOgNEeixn5FGtm6XKw" association="_IgWUUOgNEeixn5FGtm6XKw"/>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_IgW7Y-gNEeixn5FGtm6XKw" name="manager" type="_VP3l0OgLEeixn5FGtm6XKw" association="_IgWUUOgNEeixn5FGtm6XKw"/>
+  </packagedElement>
+</uml:Model>
